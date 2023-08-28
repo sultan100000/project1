@@ -1,0 +1,770 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+.container{
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.main-title {
+    margin-bottom: 50px;
+    font-size: 40px;
+    font-weight: bold;
+    position: relative;
+
+}
+
+.main-title::before {
+    content: "";
+    left: 44%;
+    bottom: -11px;
+    width: 16%;
+    background-color: #2196F3;
+    height: 5px;
+    position: absolute;
+
+}
+
+/* start header */
+.header h1 {
+    margin-left: 60px;
+    margin-top: 10px;
+    display: inline-block;
+    color: #2196F3;
+    font-weight: bold;
+
+}
+
+.links {
+    float: right;
+}
+
+ul {
+    list-style-type: none;
+
+}
+
+ul li {
+    margin-right: 10px;
+    display: inline-block;
+    margin: 10px;
+    font-size: 22px;
+    margin-top: 16px;
+    transition: 500ms;
+    position: relative;
+    
+}
+.header ul li:hover{
+    color: #2196F3;
+}
+.header ul li::before{
+    content: "";
+    background-color: #2196F3;
+    width: 0;
+    height: 3px;
+    left: 0;
+    bottom: -8px;
+    position: absolute;
+    transition: 500ms;
+}
+.header ul li:hover:before {
+    width: 100%;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    right: 0;
+    /* display: flex;
+    justify-content: space-between; */
+    width: 100%;
+    background-color: white;
+    height: 60px;
+    color:black;
+    box-shadow: 0 0 10px #ccc;
+    z-index: 1000;
+
+}
+/* end header */
+/* start landing */
+.landing{
+    background-image: url(../imgs/landing.jpg);
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+   
+}
+.landing .overlay{
+    content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(000, 000, 000, 0.5);
+        left: 0;
+        top: 0;
+   
+
+}
+
+.landing .data{
+    position: absolute;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  top: 50%;
+   color: white;
+   text-align: center;
+   z-index: 10;
+}
+.landing .data h1{
+    font-size: 45px;
+    font-weight: bold;
+    margin-top: -30px;
+}
+.landing .data p {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 55px;
+}
+.landing .data a{
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    position: relative;
+    
+}
+.landing .data a::before{
+    content: "";
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+.landing .data a:hover::before{
+    background-color: rgb(000, 000, 000, 0.2)
+}
+
+.landing .data .get-start{
+    background-color:#2196F3;
+    margin-right: 30px;
+    
+}
+.landing .data .learn-more {
+    background-color: #2196F3;
+}
+/* End landing */
+/* start welcome */
+.welcome{
+    padding: 50px 0;
+    height: 60vh;
+}
+.welcome .welcome-cont{
+    text-align: center;
+}
+.welcome .welcome-cont h2{
+    margin-bottom: 50px;
+    font-size: 40px;
+    font-weight: bold;
+    position: relative;
+    
+}
+.welcome .welcome-cont h2::before{
+    
+    content: "";
+    left: 44%;
+    bottom: -11px;
+    width: 16%;
+    background-color: #2196F3;
+    height: 5px;
+    position: absolute;
+
+}
+.welcome .welcome-cont .card{
+    float: left;
+   width: calc(100%/3.5);
+   margin-right: 65px;
+   border-radius: 5px;
+   box-shadow: 0 0 15px #ccc;
+   padding: 15px 0;
+   text-align: center;
+    transition: 500ms;
+}
+.welcome .welcome-cont .card:hover{
+    transform: translateY(-10px);
+}
+.welcome .welcome-cont .end {
+    margin-right: 0;
+}
+.welcome .welcome-cont .card i {
+    color: #2196F3;
+}
+.welcome .welcome-cont .card h3{
+   font-weight: bold;
+    margin-bottom: 10px;
+}
+.welcome .welcome-cont .card p {
+    color: #333;
+    margin-bottom: 20px;
+}
+.welcome .welcome-cont .card a {
+    text-decoration: none;
+    border: 3px solid #2196F3;
+    padding: 10px;
+    color: #2196F3;
+    position: relative;
+    transition: 500ms;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+.welcome .welcome-cont .card a::before{
+    content: "";
+    left: 0;
+    top:0;
+    background-color: #2196F3;
+    width: 0;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    transition: 500ms;
+
+}
+.welcome .welcome-cont .card a:hover::before {
+    width: 100%;
+    color: white;
+
+}
+.welcome .welcome-cont .card a:hover{
+    color: white;
+}
+/* End welcome */
+/* start works */
+.works{
+    background-color: #ececec;
+    padding: 50px 0;
+    height: 100vh;
+}
+.works .container{
+    width: 80%;
+    text-align: center;
+}
+.works .works-cont {
+
+}
+.works .works-cont .box{
+    float: left;
+    width: 29%;
+    margin:0 10px 40px 10px;
+    padding: 10px;
+    height: 200px;
+    position: relative;
+    transition: 500ms;
+}
+
+.works .works-cont .box .img img{
+    max-width: 100%;
+    border: 10px solid white;
+
+}
+
+.works .works-cont .box .over-lay {
+    width: 105%;
+    height: 110%;
+    background-color: rgb(000, 000, 000, 0.7);
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-align: center;
+     visibility: hidden;
+     transition: 300ms;
+}
+.works .works-cont .box .over-lay a{
+    color: white;
+}
+.works .works-cont .box:hover .over-lay{
+    visibility: visible;
+}
+.works .works-cont .box:hover .over-lay h3 {
+    margin-top: 100px;
+    color: white;
+
+}
+.works .works-cont .box .over-lay h3{
+    transform: translatey(-50%);
+    margin-top: 300px;
+    top: -30%;
+    color: #ececec;
+    transition: 600ms;
+}
+/* End works */
+/* start offer */
+.offer{
+    margin: 50px 0;
+    height: 70vh;
+}
+.offer .container{
+    width: 80%;
+}
+.offer .offer-cont h2{
+text-align: center;
+}
+.offer .offer-cont{
+text-align: center;
+}
+.offer .offer-cont .box {
+    width: 25%;
+    float: left;
+    background-color: #ececec;
+    margin: 10px 20px;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+}
+.offer .offer-cont .box::before{
+    content: "";
+    left: 0;
+    top: 0;
+    position: absolute;
+    background-color: #0e050575;
+    width: 0%;
+    height: 100%;
+    transition: 300ms;
+
+
+}
+.offer .offer-cont .box:hover::before {
+    width: 50%;
+}
+.offer .offer-cont .box::after {
+    content: "";
+    right: 0;
+    top: 0;
+    position: absolute;
+    background-color: #0e050575;
+    width: 0%;
+    height: 100%;
+    transition: 300ms;
+}
+
+.offer .offer-cont .box:hover::after {
+    width: 50%;
+}
+
+
+.offer .offer-cont .box i{
+    color: #2196F3;
+}
+.offer .offer-cont .box h3 {
+margin: 10px 0;
+}
+.offer .offer-cont .box p{
+    color: #333; 
+}
+/* end offer */
+/* start why-us */
+.why-us{
+    background-color: #ececec;
+    padding: 50px 0;
+    height: 60vh;
+}
+.why-us .container{
+    width: 80%;
+}
+.why-us .why-us-cont .data , .image{
+    float: left;
+    width: 40%;
+}
+.why-us .why-us-cont .image img {
+width: 90%;
+}
+.why-us .why-us-cont .data{
+    margin-right: 100px;
+}
+.why-us .why-us-cont .data h2{
+    font-size: 40px;
+    color: #2196F3;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+}
+.why-us .why-us-cont .data p {
+    margin-bottom: 10px;
+    color: #333;
+}
+.why-us .why-us-cont .data div{
+    margin-bottom: 20px;
+}
+.why-us .why-us-cont .data div span , i{
+    font-size: 23px;
+}
+.why-us .why-us-cont .data div i{
+    color: #2196F3;
+    border: 1px solid #2196F3;
+    border-radius: 50%;
+}
+/* end why-us */
+/* start projects */
+.projects{
+    height: 60vh;
+    background-image: url(../imgs/abstract-digital-grid-black-background\ \(1\).jpg);
+    background-size: cover;
+    margin-bottom: 100px;
+    background-attachment:fixed;
+    position: relative;
+    
+    
+   
+}
+.projects .over-lay{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(000, 000, 000, 0.9);
+        z-index: -1;
+     
+     
+}
+ 
+.projects .container{
+    width: 80%;
+
+}
+.projects .pro-cont .box{
+float: left;
+width: 25%;
+color: white;
+margin-top: 150px;
+text-align: center;
+    z-index: 100;
+
+}
+.projects .pro-cont{
+    z-index: 100;
+}
+.projects .pro-cont .box i {
+    color: #2196F3;
+    font-size: 40px;
+}
+.projects .pro-cont .box h2{
+    margin: 10px 0;
+}
+/* start projects */
+/* start pricing */
+.Pricing-Table{
+    height: 70vh;
+}
+.Pricing-Table .container{
+    width: 80%;
+}
+.Pricing-Table .pricing-cont .card{
+text-align: center;
+float: left;
+width: 30%;
+margin-right: 30px;
+box-shadow: 0 0 10px #ccc;
+padding: 20px 0;
+color: #333;
+position: relative;
+}
+.Pricing-Table .pricing-cont .card::before{
+content: "";
+top: 0;
+left: 0;
+width: 100%;
+height: 0;
+position: absolute;
+background-color: #ccc;
+ opacity: 0.3;
+transition: 300ms;
+}
+.Pricing-Table .pricing-cont .card::after {
+        content: "";
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 0;
+        position: absolute;
+        background-color: #ccc;
+        opacity: 0.3;
+        transition: 300ms;
+        z-index: 1;
+}
+.Pricing-Table .pricing-cont .card:hover::before {
+    height: 50%;
+}
+.Pricing-Table .pricing-cont .card:hover::after {
+    height: 50%;
+}
+.Pricing-Table .pricing-cont .card h3 {
+    font-size: 30px;
+        z-index: 10;
+}
+.Pricing-Table .pricing-cont .card p {
+    margin: 15px 0;
+    line-height: 1.7;
+        z-index: 10;
+}
+.Pricing-Table .pricing-cont .card h1{
+    width: fit-content;
+    border-radius: 50%;
+    border: 2px solid #2196F3;
+    padding: 10px;
+    margin-left: 110px;
+    font-size: 50px;
+        z-index: 10;
+}
+.Pricing-Table .pricing-cont .card a {
+    text-decoration: none;
+        border: 3px solid #2196F3;
+        padding: 10px;
+        color: #2196F3;
+        position: relative;
+        transition: 500ms;
+        margin-bottom: 5px;
+        display: inline-block;
+        z-index: 10;
+}
+.Pricing-Table .pricing-cont .card a::before{
+            content: "";
+            left: 0;
+            top: 0;
+            background-color: #2196F3;
+            width: 0;
+            height: 100%;
+            position: absolute;
+            z-index: -1;
+            transition: 500ms;
+
+}
+.Pricing-Table .pricing-cont .card a:hover:before {
+            width: 100%;
+            color: white;
+}
+.Pricing-Table .pricing-cont .card a:hover{
+    color: white;
+}
+/* End pricing */
+/* start leaders */
+.leaders{
+    height: 50vh;
+    background-color: #ececec;
+    padding: 70px 0;
+    background-image: url(../imgs/abstract-digital-grid-black-background\ \(1\).jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.leaders .container{
+    width: 80%;
+}
+
+.leaders .container .leaders-cont .leader{
+    float: left;
+    width: 40%;
+    margin: 0 50px;
+    margin-top: 100px;
+    
+}
+.leaders .container .leaders-cont .leader .image img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.leaders .container .leaders-cont .leader h3 {
+    color: white;
+    font-size: 35px;
+
+}
+.leaders .container .leaders-cont .leader span {
+    color: #2196F3;
+    font-size: 20px ;
+}
+.leaders .container .leaders-cont .leader p {
+    margin-top: 5px;
+    color:white
+}
+/* End leaders */
+/* start team */
+.team{
+    background-color: #ececec;
+    height: 60vh;
+    padding: 70px 0;
+}
+.team .container{
+    width: 80%;
+}
+.team .team-cont h2{
+    text-align: center;
+}
+
+.team .team-cont .member{
+    float: left;
+    width: 25%;
+    background-color: white;
+    margin:0 35px;
+    border-radius: 5px;
+}
+.team .team-cont .member img{
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.team .team-cont .member h3 {
+    padding:0 10px;
+    font-size: 30px;
+}
+.team .team-cont .member span{
+    color: #2196F3;
+    font-size: 20px;
+    display: inline-block;
+    padding: 10px;
+}
+/* end team */
+/* start news */
+.news{
+height: 90vh;
+}
+.news .container{
+    width: 80%;
+    padding: 20px 0;
+}
+.news .news-cont{
+    text-align: center;
+
+}
+.news .news-cont .article{
+float: left;
+margin: 10px 20px;
+width: 29%;
+background-color: #ececec;
+position: relative;
+
+}
+.news .news-cont .article h2{
+    margin: 10px 0;
+}
+.news .news-cont .article p {
+    margin: 10px 0;
+    font-size: 18px;
+    line-height: 1.9;
+
+}
+
+.news .news-cont .article i {
+    font-size: 12px;
+    color: #333;
+}
+.news .news-cont .article img {
+    width: 100%;
+    margin-bottom: 5px;
+}
+.news .news-cont .article::before {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    position: absolute;
+    background-color: #ccc;
+    opacity: 0.5;
+    transition: 300ms;
+}
+.news .news-cont .article::after {
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    position: absolute;
+    background-color: #ccc;
+    opacity: 0.5;
+    transition: 300ms;
+    z-index: 1;
+}
+.news .news-cont .article:hover:before {
+    height: 50%;
+}
+
+.news .news-cont .article:hover:after {
+    height: 50%;
+}
+
+
+.news .news-cont .article a {
+    text-decoration: none;
+    border: 3px solid #2196F3;
+    padding: 10px;
+    color: #2196F3;
+    position: relative;
+    transition: 500ms;
+    margin-bottom: 5px;
+    display: inline-block;
+    z-index: 10;
+}
+
+.news .news-cont .article a::before {
+    content: "";
+    left: 0;
+    top: 0;
+    background-color: #2196F3;
+    width: 0;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    transition: 500ms;
+
+}
+
+.news .news-cont .article a:hover:before {
+    width: 100%;
+    color: white;
+}
+
+.news .news-cont .article a:hover {
+    color: white;
+}
+/* start footer */
+.footer{
+   
+    background-color: rgb(25, 25, 25);
+    height: 30vh;
+    text-align: center;
+}
+.footer .container{
+    text-align: center;
+}
+.footer .container a {
+    display: inline-block;
+    padding: 30px;
+    color: white;
+    background-color: #333;
+    width: 30px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    transition: 300ms;
+}
+.footer .container .face{
+    margin-left: 40px;
+}
+.footer .container p{
+    color: white;
+}
+.footer .container .face:hover{
+    background-color: #2196F3;
+}
+.footer .container .twitter:hover {
+    background-color: #2196F3;
+}
+.footer .container .you:hover {
+    background-color: red;
+}
+
+/* End footer */
+/* end news */
